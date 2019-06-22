@@ -1,0 +1,155 @@
+{
+	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"For_Loop": {
+		"prefix": "for-x",
+		"body": [
+			"for (const ${2:element} of ${1:array}) {",
+			"\t$0",
+			"}"
+		],
+		"description": "For Loop"
+	},
+	"v-template": {
+		"prefix": "v-template",
+		"body": [
+			"<template>",
+			"  <div>",
+			"     {{ hello }}",
+			"   </div>",
+			"</template>",
+			"<script>",
+			"export default {",
+			"    data(){",
+			"      return {",
+			"         hello: null",
+			"            }",
+			"         },",
+			"        created() {",
+			"",
+			"         },",
+			"         methods: {",
+			"",
+			"          }",
+			"}",
+			"</script>"
+		],
+		"description": "Snipet Sederhana"
+	},
+	"php echo": {
+		"prefix": "p=",
+		"body": [
+			"<?= ?>"
+		],
+		"description": "php echo"
+	},
+	"php tag": {
+		"prefix": "pp",
+		"body": [
+			"<?php ?>"
+		],
+		"description": "php tag"
+	},
+	"ajax": {
+		"prefix": "ajax",
+		"body": [
+			"$.ajax({",
+				"\tmethod: 'POST',",
+				"\tdata  : { ${1:name} : ${2:value} },",
+				"\turl   : '<?= base_url('${3:url}') ?>',",
+				"\tdataType: 'json',",
+				"\tsuccess : function(res) {",
+					"\t\t$4",
+				"\t}",
+			"});"
+		],
+		"description": "ajax complite"
+	},
+	"input post": {
+		"prefix": "ppostci",
+		"body": [
+			"$${1:name} = $$this->input->post('${1:name}');",
+		],
+		"description": "input post ci"
+	},
+
+	"get model": {
+		"prefix": "pmodel",
+		"body": [
+			"$${1:name} = $$this->$model->$getData('${table}');",
+		],
+		"description": "get Model"
+	},
+
+	"data array": {
+		"prefix": "parray",
+		"body": [
+			"$arrSession = [",
+                "\t$key => $value,",
+                "\t$key => $value,",
+            "];"
+		],
+		"description": "data array"
+	},
+
+
+	"id click function": {
+		"prefix": "jid",
+		"body": [
+			"$('$id').$event(function () {",
+				"\t$action",
+			"});"
+		],
+		"description": "id click function"
+	},
+
+	"php if": {
+		"prefix": "pif",
+		"body": [
+			"<?php if($condition) { ?>",
+				"\t$code",
+			"<?php } ?>"
+		],
+		"description": "php if"
+	},
+
+	"php else": {
+		"prefix": "pelse",
+		"body": [
+			"else{ ?>",
+				"\t$code",
+			"<?php }"
+		],
+		"description": "php else"
+	},
+
+	"document ready function": {
+		"prefix": "jready",
+		"body": [
+			"$(document).ready(function() {",
+				"\tconsole.log($tes);",
+			"});"
+		],
+		"description": "document ready function"
+	},
+
+	
+
+	
+		
+	
+}
